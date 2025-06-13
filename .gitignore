@@ -7,7 +7,7 @@
 .pio/
 .pioenvs/
 .piolibdeps/
-./libs
+./lib
 
 # VS Code settings
 .vscode/
