@@ -58,7 +58,7 @@ const std::map<uint32_t, uint8_t> fnKeyMap = {
   {0xC00069, KEY_F8},  // BLUE
 };
 
-// Mouse movement and clicks
+// Mouse movement and clicks  -- Two versions as the normal remote uses different codes for some f'kin reason?!
 const std::map<uint32_t, String> mouseActions = {
   {0xC00061, "click"}, {0xC0005C, "click"},
   {0xC00060, "down"},  {0xC00059, "down"},
