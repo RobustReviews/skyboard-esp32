@@ -8,7 +8,7 @@
 
 #define IR_RECEIVE_PIN 15
 
-BleComboKeyboard bleKeyboard("SkyBoard Sextime", "Robust Reviews", 100);
+BleComboKeyboard bleKeyboard("SkyBoard", "Robust Reviews", 100);
 BleComboMouse bleMouse(&bleKeyboard);
 
 IRrecv irrecv(IR_RECEIVE_PIN);
