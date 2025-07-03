@@ -6,7 +6,7 @@ const MediaKeyReport MEDIA_KEY_VOLUME_DOWN = {0xEA, 0x00};
 const MediaKeyReport MEDIA_KEY_MUTE        = {0xE2, 0x00};
 
 // Key mappings (letters, digits, basic controls)
-const std::map<uint32_t, uint8_t> keyMap = {
+const std::unordered_map<uint32_t, uint8_t> keyMap = {
   {0xC000A6, 'q'}, {0xC000AC, 'w'}, {0xC0009A, 'e'}, {0xC000A7, 'r'},
   {0xC000A9, 't'}, {0xC000AE, 'y'}, {0xC000AA, 'u'}, {0xC0009E, 'i'},
   {0xC000A4, 'o'}, {0xC000A5, 'p'}, {0xC00096, 'a'}, {0xC000A8, 's'},
@@ -96,7 +96,7 @@ const std::map<uint32_t, uint8_t> keyMap = {
 };
 
 // Shifted function keys (F2–F8)
-const std::map<uint32_t, uint8_t> fnKeyMap = {
+const std::unordered_map<uint32_t, uint8_t> fnKeyMap = {
   {0xC00066, KEY_F2},  // RED KEYBOARD
   {0xC00366, KEY_F2},  // RED Navigator
   {0xC00067, KEY_F3},  // GREEN Keyboard
@@ -109,7 +109,7 @@ const std::map<uint32_t, uint8_t> fnKeyMap = {
 };
 
 // Mouse movement and clicks  -- Two versions as the normal remote uses different codes for some f'kin reason?!
-const std::map<uint32_t, String> mouseActions = {
+const std::unordered_map<uint32_t, String> mouseActions = {
   {0xC00061, "click"}, {0xC0005C, "click"},
   {0xC00060, "down"},  {0xC00059, "down"},
   {0xC0005F, "up"},    {0xC00058, "up"},
@@ -118,7 +118,7 @@ const std::map<uint32_t, String> mouseActions = {
 };
 
 
-const std::map<uint32_t, std::array<uint8_t,2>> mediaActions = {
+const std::unordered_map<uint32_t, std::array<uint8_t,2>> mediaActions = {
   {0x33875D01, {0xE9, 0x00}},  // Volume Up
   {0xC2AFA5CF, {0xEA, 0x00}},  // Volume Down
   {0x96DEDE27, {0xE2, 0x00}}   // Mute
