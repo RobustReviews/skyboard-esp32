@@ -3,6 +3,8 @@ Use an old Sky Digital IR keyboard... in the 2020s!
 
 This ESP32-based project lets you resurrect that gloriously chunky **Sky Digital TV infrared keyboard**, turning it into a working **Bluetooth HID keyboard** for modern machines. It shows up just like any regular keyboard (no drivers needed), and yes — **it actually works** on Windows 11.
 
+This project now supports the even rarer **Sky Digital Naviagator Remote** for some reason,  some of the key mappings aren't correct for this for symbols but most work fine - it's a janky old lump of dump anyway. You won't be coding or gaming on it.
+
 ![SkyBoard in action](assets/skykeyboard.JPG)
 
 ### 🎮 Features
