@@ -62,7 +62,7 @@ void setup() {
 
 void loop() {
   if (irrecv.decode(&results)) {
-    uint32_t code = results.value;
+    uint8_t code = results.value & 0xFF;
     irrecv.resume();
 
     if (!bleKeyboard.isConnected()) {
